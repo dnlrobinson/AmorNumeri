@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Robinson - Designer & Data Analyst</title>
+    <style>
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('Documents/Pictures/9DBFFCFA-A16C-4067-9811-27B818C049D1_1_105_c.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 100px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            background: transparent;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        .welcome {
+            padding: 40px 0;
+        }
+
+        .file-upload {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .file-upload:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Simple animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .animated {
+            animation-name: fadeIn;
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="animated">
+        <div class="container">
+            <h1>Daniel Robinson</h1>
+            <h2>Designer, Strategist, and Data Analyst</h2>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="container animated">
+            <section class="welcome">
+                <h3>Welcome to my professional space</h3>
+                <p>Here you'll find my portfolio, thoughts, and a unique feature to clean up your data files.</p>
+            </section>
+
+            <section class="file-upload" onclick="alert('File upload feature coming soon!')">
+                <h3>File Clean-up Portal</h3>
+                <p>Click here to upload your file and get a cleaner version back!</p>
+            </section>
+        </div>
+    </div>
+
+    <footer class="animated">
+        <p>Copyright © 2023 Daniel Robinson</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interaction
+        document.querySelector('.file-upload').addEventListener('click', function() {
+            // Placeholder for file upload functionality
+            alert('The file upload feature is not implemented yet.');
+        });
+    </script>
+
+</body>
+</html>
+
